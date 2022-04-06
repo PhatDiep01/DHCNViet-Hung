@@ -1,0 +1,36 @@
+:root {
+    --primary-text-color-blue: #00AFDA;
+    --primary-text-color-orange: #FF8C0D;
+    --white-text-color: #FFFFFF;
+    --text-color: #000000;
+    --header-height: 10rem;
+}
+
+
+.btn {
+    display: flex;
+    width: 231px;
+    height: 50px;
+    background-color: var(--primary-text-color-orange);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-text-color);
+    font-weight: 700;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
