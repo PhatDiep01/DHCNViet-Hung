@@ -34,3 +34,13 @@ html {
     margin: 0 auto;
     max-width: 1200px;
 }
+
+.box{
+    margin: 0 9%;
+}
+.border-blue {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid var(--primary-text-color-blue);
+    width: 40px;
+}

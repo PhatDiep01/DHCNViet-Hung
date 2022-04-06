@@ -523,3 +523,88 @@
     color: var(--white-text-color);
     margin-left: 15px;
 }
+
+/* ------Trang chủ / Thông báo tuyển sinh  */
+
+/* breadcrumb */
+
+
+.breadcrumb {
+    display: flex;
+    padding: 4px;   
+    border-bottom: 1px solid #E5E9EC;
+}
+
+.italics {
+    padding: 0 7px;
+}
+
+.home-page p{
+    
+    color: var(--primary-text-color-blue);
+}
+/* body */
+
+
+.body-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+    padding: 38px 0;
+}
+
+.notify-admissions {
+    flex: 1;
+}
+
+.notify-admissions-title-wrap {
+    position: relative;
+}
+
+.content-wrap {
+    display: flex;
+    padding: 20px 20px 20px 0;
+
+}
+
+.content-right {
+    padding-left: 22px;
+    line-height: 24px;
+}
+
+.content-right-title h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content-right-date p{
+    font-size: 13px;
+
+    color: #888888;
+}
+
+.content-right-text p{
+    font-size: 14px;
+    color: #333333;
+}
+
+.news {
+    height: 100%;
+    width: 300px;
+}
+
+.new-title-wrap {
+    position: relative;
+}
+
+.new-title {
+    border-bottom: 1px solid #E5E9EC;
+}
+
+.notify-admissions-title {
+    border-bottom: 1px solid #E5E9EC;
+}
+
+
+
+
