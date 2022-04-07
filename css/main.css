@@ -549,12 +549,14 @@
 .body-wrap {
     display: flex;
     justify-content: space-between;
-    gap: 43px;
     padding: 38px 0;
+    position: relative;
+    line-height: 24px;
 }
 
 .notify-admissions {
-    flex: 1;
+    /* flex: 1; */
+    max-width: 70%;
 }
 
 .notify-admissions-title-wrap {
@@ -564,17 +566,27 @@
 .content-wrap {
     display: flex;
     padding: 20px 20px 20px 0;
-
+    border-bottom: 1px dashed #DFE5EC;
 }
 
 .content-right {
     padding-left: 22px;
     line-height: 24px;
+
 }
 
 .content-right-title h4{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
+}
+
+.content-right-date {
+    display: flex;
+}
+
+.content-right-date img{
+    margin-left: 5px;
+    object-fit: none;
 }
 
 .content-right-date p{
@@ -589,8 +601,17 @@
 }
 
 .news {
-    height: 100%;
+    height: auto;
     width: 300px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #E5E9EC;
+    border-radius: 15px;
+    top: 22px;
+}
+
+.new-wrap {
+    padding: 15px 21px;
 }
 
 .new-title-wrap {
@@ -604,6 +625,67 @@
 .notify-admissions-title {
     border-bottom: 1px solid #E5E9EC;
 }
+
+.new-img-top {
+    width: 258px;
+    margin: 20px 0;
+    height: 173px;
+}
+
+.new-img-top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.new-top-title {
+    padding: 13px 0;
+    /* display: flex; */
+    position: relative;
+}
+
+.new-top-title img{
+    object-fit: none;
+    position: absolute;
+    top: 63%;
+    left: 63%;
+    height: 24px;
+    width: 33px;
+}
+
+.new-top-title  span{
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+}
+
+.new-content-wrap .new-content:last-child {
+    padding-bottom: 32px;
+}
+
+.new-content {
+    padding: 12px 0;
+    border-top: 1px dashed #DFE5EC;
+}
+
+.new-content p{
+    font-size: 14px;
+}
+
+.new-content span{
+    font-size: 12px;
+    color: #666;
+}
+
+.new-content img{
+    object-fit: none;
+    height: 24px;
+    width: 33px;
+}
+
+
+
+
 
 
 

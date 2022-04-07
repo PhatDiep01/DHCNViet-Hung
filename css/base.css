@@ -19,6 +19,19 @@
     color: var(--white-text-color);
     font-weight: 700;
 }
+
+.btn-more {
+    display: flex;
+    width: 256px;
+    height: 33px;
+    background-color: var(--primary-text-color-blue);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-text-color);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -44,3 +57,41 @@ html {
     border-bottom: 1px solid var(--primary-text-color-blue);
     width: 40px;
 }
+
+/* phan trang(pagination) */
+.pagination {
+    padding: 24px 0;
+}
+
+.padding-btn {
+padding-bottom: 12px
+}
+
+.pagination-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 5px;
+}
+
+.pagination-item-active .pagination-item-link {
+    color: var(--primary-text-color-blue);
+    border: 1px solid var(--primary-text-color-blue);
+}
+
+.pagination-item-link {
+    width: 30px;
+    font-size: 15px;
+    display: block;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
