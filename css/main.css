@@ -478,13 +478,17 @@
 .footer {
     margin-top:  50px;
     width: 100%;
-    height: 130px;
+    height: 120px;
     background-color: var(--primary-text-color-blue);
+}
+
+.footer-box {
+    
 }
 
 .footer-contact {
     display: flex;
-    padding: 2% 6%;
+    padding: 32px 9% 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -500,29 +504,58 @@
 
 .contact-social-icon {
     border: 1.5px solid var(--white-text-color);
-    border-radius: 50%;
+    border-radius: 100%;
     margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
 }
 
-.contact-social-icon i{
+/* .contact-social-icon i{
     margin: 8px;
     font-size: 18px;
     color: var(--white-text-color);
 
+} */
+
+.contact-social-icon .icon-fb{
+    width: 18.47px;
+    height: 18.47px;
+}
+
+.contact-social-icon .icon-youtube{
+    width: 18.13px;
+    height: 15.83px;
+}
+
+.contact-social-icon .icon-twitter{
+    width: 22.57px;
+    height: 18.47px;
+}
+
+.contact-social-icon .icon-zalo{
+    width: 24.89px;
+    height: 10px;
 }
 
 .footer-bottom-connect ul{
     display: flex;
     justify-content: right;
-    padding: 0 6%;
+    padding: 0 9%;
     list-style: none;
 }
 
 .footer-bottom-connect li a{
     font-size: 12px;
     color: var(--white-text-color);
-    margin-left: 15px;
+    margin-left: 20px;
 }
+
+
+
 
 /* ------Trang chủ / Thông báo tuyển sinh  */
 
@@ -616,7 +649,7 @@
 }
 
 .new-wrap {
-    padding: 15px 21px;
+    margin: 15px 21px;
 }
 
 .new-title-wrap {
@@ -627,13 +660,17 @@
     border-bottom: 1px solid #E5E9EC;
 }
 
+.new-title h3{
+    font-size: 16px;
+}
+
 .notify-admissions-title {
     border-bottom: 1px solid #E5E9EC;
 }
 
 .new-img-top {
     width: 258px;
-    margin: 20px 0;
+    margin-top: 20px;
     height: 173px;
 }
 
@@ -649,11 +686,15 @@
     position: relative;
 }
 
+.new-top-title h4{
+    font-size: 14px;
+}
+
 .new-top-title img{
     object-fit: none;
     position: absolute;
     top: 63%;
-    left: 63%;
+    left: 42%;
     height: 24px;
     width: 33px;
 }
@@ -669,7 +710,7 @@
 }
 
 .new-content {
-    padding: 12px 0;
+    margin: 12px 0;
     border-top: 1px dashed #DFE5EC;
 }
 
