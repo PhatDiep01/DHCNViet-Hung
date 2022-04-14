@@ -40,7 +40,7 @@
 
 .header .menu {
     display: flex;
-    height: 6rem;
+    height: 60px;
     width: 100%;
     background-color: var(--primary-text-color-blue);
 }

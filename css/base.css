@@ -23,7 +23,9 @@
 .btn, .btn-more:hover{
     cursor: pointer;
 }
-
+.main {
+    overflow: hidden;
+}
 .btn-more {
     display: flex;
     width: 256px;
