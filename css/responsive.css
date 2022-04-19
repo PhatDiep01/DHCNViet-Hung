@@ -1,0 +1,240 @@
+/* Medium */
+@media (max-width: 992px) {
+    .header-logo img {
+        max-width: 82.4px;
+        max-height: 64px;
+    }
+    .header .header-title {
+        width: 100%;
+    }
+   
+    .header .header-title h3 {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .thongso-content h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .thongso-content p {
+        text-align: center;
+        font-size: 12px;
+    }
+    .riview-list-item img{
+        max-width: 173px;
+    }
+
+    .row-title h3 {
+        font-size: 15px;
+    }
+
+    .row-desc p {
+        font-size: 10px;
+    }
+    .riview-list-item p {
+        font-size: 15px;
+    }
+
+    .chuyennganh-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-chuyennganh{
+        font-size: 25px;
+    }
+
+    .card-body-chuyennganh .card-title {
+        font-size: 12px;
+    }
+
+    .card.card-chuyennganh {
+        max-width: 400px;
+    }
+    .card-body-chuyennganh ul li{
+        font-size: 12px;
+    }
+
+    .TTTS-img img{
+        max-height: 1034px;
+    }
+    .box-xettuyen-title h1 {
+        font-size: 25px;
+    }
+
+    .box-xettuyen-desc p {
+        font-size: 13px;
+    }
+
+    .gallery-title h3 {
+        font-size: 25px;
+    }
+    
+    .gallery-desc p{
+        font-size: 13px;
+    }
+    
+    .gallery-name-product p{
+        font-size: 13px;
+    }
+    .gallery-content-title{
+        font-size: 15px;
+    }
+
+    .location-title h2{
+        font-size: 25px;
+    }
+    
+    .location-desc p{
+        font-size: 13px;
+    }
+
+    .text-location p{
+        font-size: 14px;
+    }
+}
+
+
+/* Small */
+@media (max-width: 768px) {
+    .thongso-content h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .thongso-content p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .riview-list-item img{
+        max-width: 150px;
+    }
+
+    .title-chuyennganh {
+        font-size: 25px;
+    }
+
+    .TTTS-img img{
+        max-height: 808px;
+    }
+
+    .TTTS-title h1 {
+        font-size: 25px;
+    }
+
+    .TTTS-desc p {
+        font-size: 13px;
+    }
+    .TTTS-img {
+        padding: 15px 0;
+    }
+
+    .btn-register .btn {
+        font-size: 15px;
+    }
+
+    .box-xettuyen-title h1 {
+        font-size: 20px;
+    }
+
+    .box-xettuyen-desc p {
+        font-size: 13px;
+    }
+
+    .col-6.contact-full p{
+        font-size: 15px;
+        margin: 0;
+    }
+    .contact-full p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .header-title h3 {
+        font-size: 10px;
+    }
+    .thongso-content h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .thongso-content p {
+        text-align: center;
+        font-size: 10px;
+    }
+    .riview-list-item img{
+        max-width: 120px;
+    }
+
+    .riview-list-item p {
+        font-size: 12px;
+    }
+
+    .title-chuyennganh{
+        font-size: 20px;
+    }
+
+    .TTTS-img img{
+        max-height: 600px;
+    }
+    .TTTS-title h1 {
+        font-size: 15px;
+    }
+    .TTTS-img {
+        padding: 15px 0;
+    }
+
+    .btn-register .btn {
+        font-size: 10px;
+    }
+
+    .form-register-titlle h3 {
+        font-size: 20px;
+    }
+
+    .form-register-titlle {
+        padding: 10px;
+    }
+
+    .input-style {
+        font-size: 10px;
+    }
+    .hvr-pop p {
+        font-size: 12px;
+    }
+
+    .box-xettuyen {
+        padding-bottom: 50px;
+    }
+    .gallery-title h3 {
+        font-size: 20px;
+    }
+    
+    .gallery-desc p{
+        font-size: 11px;
+    }
+    
+    .gallery-name-product p{
+        font-size: 11px;
+    }
+    .gallery-content-title{
+        font-size: 13px;
+    }
+
+    .contact-full p{
+        font-size: 12px;
+    }
+    .footer-bot-list li a{
+        padding-left: 8px;
+    }
+
+    .box.card-chuyennganh {
+        max-width: 400px;
+    }
+}

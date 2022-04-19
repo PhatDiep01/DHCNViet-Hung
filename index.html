@@ -8,6 +8,7 @@
     <title>Hệ Thống Dashboard 2022</title>
     <!-- link fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <link rel="stylesheet" href="./css/hover.css">
@@ -23,425 +24,502 @@
     <!-- link css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="main">
 
         <!-- section header start -->
-        <div class="header" data-aos="fade-down-right">
-            <div class="container">
-                <div class="top-header">
-                    <img class="header-logo" src="./images/logoviethung 2 1 (Traced) x2.png" alt="logo">
-                    <div class="header-title">
-                        <h3>CỔNG THÔNG TIN TUYỂN SINH<br>ĐẠI HỌC CÔNG NGHIỆP VIỆT - HUNG</h3>
-                    </div>
-                </div>
+        <div class="header container d-flex px-0 py-2" data-aos="fade-left">
+            <div class="header-logo col-lg-4">
+                <img src="./images/logoviethung 2 1 (Traced) x2.png" alt="">
             </div>
-            <div class="header-wrap">
-                <div class="container">
-                    <div class="menu">
-                        <a href=""><i class="fas fa-home"></i></a>
-                        <ul>
-                            <li class="hvr-underline-from-left">
-                                <a href="">TRANG CHỦ</a>
-                            </li>
-                            <li class="hvr-underline-from-left">
-                                <a href="">THÔNG BÁO TUYỂN SINH</a>
-                            </li>
-                            <li class="hvr-underline-from-left">
-                                <a href="">CHUYÊN NGÀNH ĐÀO TẠO</a>
-                            </li>
-                            <li class="hvr-underline-from-left">
-                                <a href="">ĐĂNG KÝ XÉT TUYỂN</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="banner">
-                    <img src="./images/Rectangle 451 x2.png" alt="">
-                </div>
-            </div>  
+            <div class="header-title col-lg-8 d-flex align-items-center">
+                <h3>CỔNG THÔNG TIN TUYỂN SINH <br>
+                    ĐẠI HỌC CÔNG NGHIỆP VIỆT - HUNG</h3>
+            </div>
         </div>
         <!-- section header end -->
-    
-    
-        <div class="box-register" data-aos="fade-left">
-            <div class="container">
-                <div class="section-visao-wrap">
-                    <div class="visao">
-                        <h1>45</h1>
-                        <span>Truyền thống</span>
+
+        <!-- section navbar start -->
+        <div class="navbar-wrap align-items-center  d-flex d-none d-lg-block" data-aos="fade-left">
+                <ul class="nav justify-content-between  box">
+                    <li class="nav-item d-flex">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                        <a href="" class="nav-link"> TRANG CHỦ</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">THÔNG BÁO TUYỂN SINH</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">ĐĂNG KÝ XÉT TUYỂN</a></li>
+                    </li>
+                </ul>
+        </div>
+        <!-- section navbar end -->
+
+        <!-- section navbar position start -->
+        <nav class="navbar navbar-light bg-nav d-block d-lg-none py-1">
+            <div class="container-fluid" style="justify-content: end;">
+                <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style="justify-content: end;">
+                  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>  -->
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Thông Tin Tuyển Sinh</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Chuyên Ngành Đào Tạo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Đăng Ký Xét Tuyển</a>
+                      </li>
+                  </ul>
+                  <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!-- section navbar position end -->
+
+        <!-- section banner start -->
+        <div class="banner" data-aos="fade-left">
+            <img src="./images/Rectangle 451 x2.png" alt="">
+        </div>
+        <!-- section banner end -->
+
+            <!-- section thongso start -->
+            <div class="box-thongso container box" data-aos="fade-left">
+                <div class="row">
+                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
+                        <h3>45</h3>
+                        <p>Truyền thống</p>
                     </div>
-                    <div class="visao">
-                        <h1>96%</h1>
-                        <span>Sinh viên có việc làm</span>
+                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
+                        <h3>96%</h3>
+                        <p>Sinh viên có việc làm</p>
                     </div>
-                    <div class="visao">
-                        <h1>10%</h1>
-                        <span>Sinh viên du học<br> chuyển tiếp tại Hungary</span>
+                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
+                        <h3>10%</h3>
+                        <p>Sinh viên du học chuyển tiếp tại Hungary</p>
                     </div>
-                    <div class="visao">
-                        <h1>50.000</h1>
-                        <span>Sinh viên đã tốt nghiệp</span>
+                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
+                        <h3>50.000</h3>
+                        <p>Sinh viên đã tốt nghiệp</p>
                     </div>
                 </div>
-            </div>  
-    
-            <div class="box-register-title">
-                <h1>VÌ SAO CHỌN ĐẠI HỌC CÔNG NGHIỆP VIỆT HUNG ?</h1>
             </div>
-            <div class="box-register-desc">
-                <p>Là trường Đại học Công lập - Trực thuộc Bộ Công Thương<br> gắn kết với triết lý giáo dục: Không ngừng đổi mới, sáng tạo vì người học và sự phù hợp</p>
-            </div>
-            <div class="container">
-                <div class="box-register-uudai">
-                    <div class="box-uudai hvr-grow">
-                        <img  src="./images/Ellipse 2 (1).png" alt="">
+            <!-- section thongso end -->
+
+            <!-- section review start -->
+            <div class="container box" data-aos="fade-left">
+                <div class="row row-title">
+                    <h3>VÌ SAO CHỌN ĐẠI HỌC CÔNG NGHIỆP VIỆT HUNG ?</h3>
+                </div>
+                <div class="row row-desc">
+                    <p>Là trường Đại học Công lập - Trực thuộc Bộ Công Thương<br>
+                        gắn kết với triết lý giáo dục: Không ngừng đổi mới, sáng tạo vì người học và sự phù hợp</p>
+                </div>
+
+                <div class="row riview-list box">
+                    <div class="col-4 riview-list-item">
+                        <img src="./images/Ellipse 2 (1).png" alt="">
                         <p>Học phí ưu đãi</p>
                     </div>
-                    <div class="box-uudai hvr-grow">
+                    <div class="col-4 riview-list-item">
                         <img src="./images/Ellipse 2 (2).png" alt="">
                         <p>Cơ sở vật chất hiện đại</p>
                     </div>
-                    <div class="box-uudai hvr-grow">
+                    <div class="col-4 riview-list-item">
                         <img src="./images/Ellipse 2 (3).png" alt="">
                         <p>Đào tạo theo nhu cầu của doanh nghiệp</p>
                     </div>
-                </div>
-    
-                <div class="box-register-uudai">
-                    <div class="box-uudai hvr-grow">
+                    <div class="col-4 riview-list-item">
                         <img src="./images/Ellipse 2 (4).png" alt="">
                         <p>Cơ hội du học tại nước ngoài</p>
                     </div>
-                    <div class="box-uudai hvr-grow">
+                    <div class="col-4 riview-list-item">
                         <img src="./images/Ellipse 2 (5).png" alt="">
-                        <p>Cơ hội việc làm</p>
+                        <p>Cơ hội việc làm  </p>
                     </div>
-                    
-                    <div class="box-uudai hvr-grow">
+                    <div class="col-4 riview-list-item">
                         <img src="./images/Ellipse 2 (6).png" alt="">
                         <p>Môi trường năng động</p>
                     </div>
-                </div>
-                <div class="btn-register">
-                    <div class="btn hvr-pop" >ĐĂNG KÝ NGAY</div>
-                </div>
-            </div>
-           
-        </div>
-    
-        <div class="box-chuyennganh" data-aos="fade-down-right">
-            <div class="box-chuyennganh-title">
-                <h1>CÁC CHUYÊN NGÀNH ĐÀO TẠO</h1>
-            </div>
-    
-            <div class="container">
-                <div class="nganh-wrap">
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH CÔNG NGHỆ THÔNG TIN</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
+                    <div class="btn-register">
+                        <div class="btn btn-primary hvr-pop" >ĐĂNG KÝ NGAY</div>
                     </div>
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH CÔNG NGHỆ KỸ THUẬT Ô TÔ</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỆN - ĐIỆN TỬ</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH CÔNG NGHỆ KỸ THUẬT CƠ KHÍ</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                <div class="nganh-wrap">
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH CÔNG NGHỆ KỸ THUẬT XÂY DỰNG</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH QUẢN TRỊ KINH DOANH</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH TÀI CHÍNH NGÂN HÀNG</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
-                    <div class="nganh hvr-grow">
-                        <div class="nganh-title">
-                            <h3>NGÀNH KINH TẾ</h3>
-                        </div>
-                        <img class="nganh-img" src="./images/Rectangle 453 x2.png" alt="">
-                        <ul>
-                            <li>Công nghệ thông tin</li>
-                            <li>Quảng cáo số</li>
-                            <li>Thương mại điện tử</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Thiết kế đồ họa</li>
-                            <li>Tin học - Kế toán</li>
-                        </ul>
-                    </div>
+
+
                 </div>
             </div>
-        </div>
-    
-        <div class="TTTS" data-aos="zoom-in">
-            <div class="container">
-                <div class="TTTS-title">
-                    <h1>THÔNG TIN TUYỂN SINH 2022</h1>
+            <!-- section review end -->
+
+        <!-- section nganh start -->
+            <div class="container-fluid px-0 mx-0" data-aos="fade-left">
+                <div class="top-chuyennganh">
+                    <h3 class="title-chuyennganh">CÁC CHUYÊN NGÀNH ĐÀO TẠO</h3>
                 </div>
-                <div class="TTTS-desc">
-                    <p>Mã trường Đại Học Công Nghiệp Việt Hung: VHD</p>
-                </div>
-                <div class="TTTS-img">
-                    <img src="./images/trang tuyen sinh dai hoc viet hung 2 1.png" alt="">
+                <div class="row" style="margin: 0 9%; padding-bottom: 20px;">
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ THÔNG TIN</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT Ô TÔ</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỆN - ĐIỆN TỬ</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT CƠ KHÍ</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT XÂY DỰNG</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH QUẢN TRỊ KINH DOANH</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH TÀI CHÍNH NGÂN HÀNG</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
+                        <div class="card card-chuyennganh hvr-grow">
+                            <div class="card-body card-body-chuyennganh">
+                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH KINH TẾ</h4>
+                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
+                                <ul>
+                                    <li>Công nghệ thông tin</li>
+                                    <li>Quảng cáo số</li>
+                                    <li>Thương mại điện tử</li>
+                                    <li>Thiết kế đồ họa</li>
+                                    <li>Tin học - Kế toán</li>
+                                    <li>Công nghệ truyền thông</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="box-xettuyen"  data-aos="fade-down-right">
-            <div class="container">
-                <div class="box-xettuyen-title">
-                    <h1>ĐĂNG KÝ TƯ VẤN & XÉT TUYỂN</h1>
+        <!-- section nganh end -->
+
+        <!-- sectiom TTTS start -->
+            <div class="TTTS" data-aos="zoom-in">
+                
+                    <div class="TTTS-title">
+                        <h1>THÔNG TIN TUYỂN SINH 2022</h1>
+                    </div>
+                    <div class="TTTS-desc">
+                        <p>Mã trường Đại Học Công Nghiệp Việt Hung: VHD</p>
+                    </div>
+                    <div class="TTTS-img">
+                        <img src="./images/trang tuyen sinh dai hoc viet hung 2 1.png" alt="">
                 </div>
-                <div class="box-xettuyen-desc">
-                    <p>Vui lòng nhập thông tin đầy đủ để được tư vấn miễn phí</p>
+            </div>
+        <!-- sectiom TTTS end -->
+
+        <!-- section xettuyen start -->
+            <div class="box-xettuyen"  data-aos="fade-left">
+                <div class="container-fluid">
+                    <div class="box-xettuyen-title">
+                        <h1>ĐĂNG KÝ TƯ VẤN & XÉT TUYỂN</h1>
+                    </div>
+                    <div class="box-xettuyen-desc">
+                        <p>Vui lòng nhập thông tin đầy đủ để được tư vấn miễn phí</p>
+                    </div>
+                    <div class="form-register">
+                        <div class="form-register-titlle">
+                            <h3>Đăng ký</h3>
+                        </div>
+                        <div class="form-register-input">
+                            <input class ="input-style" type="text" name="" id="" placeholder="Họ tên*" required>
+                        </div><div class="form-register-input">
+                            <input class ="input-style" type="text" name="" id="" placeholder="Ngày sinh">
+                        </div>
+                        <div class="form-register-input">
+                            <input class ="input-style" type="number" name="" id="" placeholder="Điện thoại*" required>
+                        </div>
+                        <div class="form-register-input">
+                            <input class ="input-style" type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <div class="form-register-input">
+                            <input class ="input-style" type="text" name="" id="" placeholder="Link facebook">
+                        </div>
+                        <div class="form-register-input">
+                            <input class ="input-style" type="text" name="" id="" placeholder="Trường THPT (bắt buộc)*" required>
+                        </div>
+                        <div class="form-register-input ">
+                            <input class ="input-style" type="text" name="" id="" placeholder="Tỉnh (bắt buộc)*" required>
+                        </div>
+                        <div class="btn btn-primary hvr-pop">
+                            <p>ĐĂNG KÝ NGAY</p>
+                        </div>
+                    </div>          
                 </div>
-                <div class="form-register">
-                    <div class="form-register-titlle">
-                        <h3>Đăng ký</h3>
+            </div>
+        <!-- section xettuyen end -->
+
+        <!-- section gallery start -->
+            <div class="gallery" data-aos="fade-left">   
+                <div class="container-fluid px-0">
+                    <div class="gallery-title">
+                        <h3>NHỮNG HÌNH ẢNH VỀ TRƯỜNG</h3>
                     </div>
-                    <div class="form-register-input">
-                        <input class ="input-style" type="text" name="" id="" placeholder="Họ tên*" required>
-                    </div><div class="form-register-input">
-                        <input class ="input-style" type="text" name="" id="" placeholder="Ngày sinh">
+                    <div class="gallery-desc">
+                        <p>Nhà trường tạo điều kiện thuận lợi giúp sinh viên phát triển năng lực, khả năng tư duy sáng tạo <br>trong thời kỳ hội nhập</p>
                     </div>
-                    <div class="form-register-input">
-                        <input class ="input-style" type="number" name="" id="" placeholder="Điện thoại*" required>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 gallery-product">
+                            <div class="gallery-name-product">
+                                <p>Video</p>
+                            </div>
+                            <div class="gallery-content">
+                                <img src="./images/Rectangle 456 (1) x2.png" alt="">
+                                <p class="gallery-content-title">Giới thiệu trường Đại học Công nghiệp Việt - Hung</p>
+                                
+                                <div class="logo-ytb"><i class="fa-brands fa-youtube"></i>  </div>                       
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12 gallery-product ">
+                            <div class="gallery-name-product">
+                                <p>Thư viện ảnh</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
+                                    <img src="./images/Rectangle 458.png" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
+                                    <img src="./images/Rectangle 459.png" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
+                                    <img src="./images/Rectangle 460.png" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
+                                    <img src="./images/Rectangle 461.png" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
+                                    <img src="./images/Rectangle 462.png" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
+                                    <img src="./images/Rectangle 463.png" alt="">
+                                </div>
+                                <div class="more d-flex justify-content-end">
+                                    <a href="#">Xem thêm</a>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-register-input">
-                        <input class ="input-style" type="email" name="" id="" placeholder="email">
+                </div>
+            </div>
+        <!-- section gallery end -->
+
+        <!-- section location start -->
+            <div class="location" data-aos="zoom-in">
+                <div class="location-title">
+                    <h2>các cơ sở đào tạo   </h2>
+                </div>
+                <div class="location-desc">
+                    <p>Cơ sở vật chất, kĩ thuật hạ tầng được trang bị đầy đủ để sinh viên có thể thoải mái học tập và gắn bó<br> suốt quãng thời gian sinh viên tươi đẹp ở đây</p>
+                </div>
+
+                <div class="location-adress-wrap">
+                    <div class="location-adress hvr-grow">
+                        <div class="img-location">
+                            <img src="./images/Rectangle 466.png" alt="">
+                        </div>
+                        <div class="text-location">
+                            <p>Cơ sở 1: Số 16 Hữu Nghị - Xuân Khanh - Sơn Tây - TP. Hà Nội  </p>
+                        </div>
                     </div>
-                    <div class="form-register-input">
-                        <input class ="input-style" type="text" name="" id="" placeholder="Link facebook">
+                    <div class="location-adress hvr-grow">
+                        <div class="img-location">
+                            <img src="./images/Rectangle 466.png" alt="">
+                        </div>
+                        <div class="text-location">
+                            <p>Cơ sở 2: Bình Phú, Thạch Thất, Hà Nội</p>
+                        </div>
                     </div>
-                    <div class="form-register-input">
-                        <input class ="input-style" type="text" name="" id="" placeholder="Trường THPT (bắt buộc)*" required>
-                    </div>
-                    <div class="form-register-input input-style-last">
-                        <input class ="input-style" type="text" name="" id="" placeholder="Tỉnh (bắt buộc)*" required>
-                    </div>
-                    <div class="btn hvr-pop">
-                        <p>ĐĂNG KÝ NGAY</p>
+                    <div class="location-adress hvr-grow">
+                        <div class="img-location">
+                            <img src="./images/Rectangle 466.png" alt="">
+                        </div>
+                        <div class="text-location">
+                            <p>Cơ sở 3: S27 Lê Văn Lương, Thanh Xuân, Hà Nội</p>
+                        </div>
                     </div>
                 </div>          
             </div>
-        </div>
-    
-        <div class="box-review" data-aos="fade-down-left">
-            <div class="box-review-wrap">
-                <div class="box-review-title">
-                    <h4>NHỮNG HÌNH ẢNH VỀ TRƯỜNG</h4>
-                </div>
-                <div class="box-review-desc">
-                    <p>Nhà trường tạo điều kiện thuận lợi giúp sinh viên phát triển năng lực, khả năng tư duy sáng tạo<br> trong thời kỳ hội nhập</p>
-                </div>
-            </div>
-            <div class="videoandphotos">
-                <div class="video hvr-grow">
-                    <div class="video-title">
-                        <h6>Video</h6>
-                    </div>
-                    <div class="video-img">
-                        <img src="./images/Rectangle 456 (1).png" alt="">
-                        <div class="ytb-title">
-                            <h5>Giới thiệu trường Đại học Công nghiệp Việt - Hung</h5>
-                            
-                        </div>
-                        <div class="icon-ytb">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="libphotos-index">
-                    <div class="libphotos-index-title">
-                        <h6>Thư viện ảnh</h6>
-                    </div>
-                    <div class="libphotos-index-image-wrap">
-                        <img class="libphotos-index-image hvr-grow" src="./images/Rectangle 458.png" alt="">
-                        <img class="libphotos-index-image hvr-grow" src="./images/Rectangle 459.png" alt="">
-                        <img class="libphotos-index-image hvr-grow" src="./images/Rectangle 460.png" alt="">
-                        <img class="libphotos-index-image hvr-grow" src="./images/Rectangle 461.png" alt="">
-                        <img class="libphotos-index-image hvr-grow" src="./images/Rectangle 462.png" alt="">
-                        <img class="libphotos-index-image hvr-grow" src="./images/Rectangle 463.png" alt="">
-                    </div>
-                    <div class="xemthem-wrap">
-                        <a href="#" class="xemthem"> Xem thêm <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="location" data-aos="zoom-in">
-            <div class="location-title">
-                <h2>các cơ sở đào tạo   </h2>
-            </div>
-            <div class="location-desc">
-                <p>Cơ sở vật chất, kĩ thuật hạ tầng được trang bị đầy đủ để sinh viên có thể thoải mái học tập và gắn bó<br> suốt quãng thời gian sinh viên tươi đẹp ở đây</p>
-            </div>
-    
-            <div class="location-adress-wrap">
-                <div class="location-adress hvr-grow">
-                    <div class="img-location">
-                        <img src="./images/Rectangle 466.png" alt="">
-                    </div>
-                    <div class="text-location">
-                        <p>Cơ sở 1: Số 16 Hữu Nghị - Xuân Khanh - Sơn Tây - TP. Hà Nội  </p>
-                    </div>
-                </div>
-                <div class="location-adress hvr-grow">
-                    <div class="img-location">
-                        <img src="./images/Rectangle 466.png" alt="">
-                    </div>
-                    <div class="text-location">
-                        <p>Cơ sở 2: Bình Phú, Thạch Thất, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="location-adress hvr-grow">
-                    <div class="img-location">
-                        <img src="./images/Rectangle 466.png" alt="">
-                    </div>
-                    <div class="text-location">
-                        <p>Cơ sở 3: S27 Lê Văn Lương, Thanh Xuân, Hà Nội</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    
+        <!-- section location end -->
+
         <!-- footer section start -->
-        <div class="footer">
-            <div class="footer-contact">
-                <div class="footer-contact-phone">
-                    <p>Hotline: <b>0974.966.966</b></p>
-                    <p>Email: <b>tuyensinhviethung@viu.edu.vn</b></p>
+            <div class="footer container-fliud">
+                <div class="box">
+                    <div class="row">
+                        <div class=" col-12 col-sm-6 col-md-6 col-lg-6 contact-full ">
+                            <p>Hotline: <span>0974.966.966</span></p>
+                            <p>Email: <span>tuyensinhviethung@viu.edu.vn</span></p>   
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 justify-content-start justify-content-sm-end footer-contact-social ">
+                            <div class="contact-social-icon"> 
+                                <a href="#" class="contact-social-icon-link">
+                                    <img class="icon-fb" src="./images/Vector (2).png" alt="">
+                                </a>
+                            </div>
+                            <div class="contact-social-icon">
+                                <a href="#" class="contact-social-icon-link">
+                                    <img class="icon-youtube" src="./images/Vector (1).png" alt="">
+                                </a>
+                            </div>
+                            <div class="contact-social-icon">
+                                <a href="#" class="contact-social-icon-link">
+                                    <img class="icon-twitter" src="./images/Vector.png" alt="">
+                                </a>
+                            </div>
+                            <div class="contact-social-icon">
+                                <a href="#" class="contact-social-icon-link">
+                                    <img class="icon-zalo" src="./images/image 3 (Traced).png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bot">
+                        <ul class="footer-bot-list d-flex justify-content-md-end d-flex justify-content-sm-conter">
+                            <li>
+                                <a href="#">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản sử dụng</a>
+                            </li>
+                            <li>
+                                <a href="#">Quyền riêng tư</a>
+                            </li>
+                            <li>
+                                <a href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-contact-social">
-                    <div class="contact-social-icon"> 
-                        <a href="#" class="contact-social-icon-link">
-                            <img class="icon-fb" src="./images/Vector (2).png" alt="">
-                        </a>
-                    </div>
-                    <div class="contact-social-icon">
-                        <a href="#" class="contact-social-icon-link">
-                            <img class="icon-youtube" src="./images/Vector (1).png" alt="">
-                        </a>
-                    </div>
-                    <div class="contact-social-icon">
-                        <a href="#" class="contact-social-icon-link">
-                            <img class="icon-twitter" src="./images/Vector.png" alt="">
-                        </a>
-                    </div>
-                    <div class="contact-social-icon">
-                        <a href="#" class="contact-social-icon-link">
-                            <img class="icon-zalo" src="./images/image 3 (Traced).png" alt="">
-                        </a>
-                    </div>
-                </div> 
             </div>
-            <div class="footer-bottom-connect">
-                <ul>
-                    <li>
-                        <a href="#" class="footer-bottom-connect">Trang chủ</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-bottom-connect">Điều khoản sử dụng</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-bottom-connect">Quyền riêng tư</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-bottom-connect">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <!-- footer section and -->
     </div>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
