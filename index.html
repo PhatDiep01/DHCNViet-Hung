@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hệ Thống Dashboard 2022</title>
-    <!-- link fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- link fontawesome -->
+        <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.css">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="./css/hover.css">
 
@@ -23,21 +25,20 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
-    <!-- Bootstrap -->
-
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    
 </head>
 
 <body>
     <div class="main">
-
         <!-- section header start -->
         <div class="header container d-flex px-0 py-2" data-aos="fade-left">
             <div class="header-logo col-lg-4">
-                <img src="./images/logoviethung 2 1 (Traced) x2.png" alt="">
+                <a href="#">
+                    <img src="./images/logoviethung 2 1 (Traced) x2.png" alt="">
+                </a>
             </div>
             <div class="header-title col-lg-8 d-flex align-items-center">
                 <h3>CỔNG THÔNG TIN TUYỂN SINH <br>
@@ -48,12 +49,11 @@
 
         <!-- section navbar start -->
         <div class="navbar-wrap align-items-center  d-flex d-none d-lg-block" data-aos="fade-left">
-                <ul class="nav justify-content-between  box">
+                <ul class="nav justify-content-between container">
                     <li class="nav-item d-flex">
-                        <a href="" class="nav-link">
-                            <i class="fa-solid fa-house"></i>
-                        </a>
-                        <a href="" class="nav-link"> TRANG CHỦ</a></li>
+
+                        <a href="" class="nav-link"><i class="fa-solid fa-house" style="margin-right: 20px;"></i> 
+                            TRANG CHỦ</a></li>
                     <li class="nav-item">
                         <a href="" class="nav-link">THÔNG BÁO TUYỂN SINH</a></li>
                     </li>
@@ -106,210 +106,365 @@
 
         <!-- section banner start -->
         <div class="banner" data-aos="fade-left">
-            <img src="./images/Rectangle 451 x2.png" alt="">
+            <a href="#">
+
+                <img src="./images/Rectangle 451 x2.png" alt="">
+            </a>
         </div>
         <!-- section banner end -->
 
             <!-- section thongso start -->
-            <div class="box-thongso container box" data-aos="fade-left">
-                <div class="row">
-                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
-                        <h3>45</h3>
-                        <p>Truyền thống</p>
-                    </div>
-                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
-                        <h3>96%</h3>
-                        <p>Sinh viên có việc làm</p>
-                    </div>
-                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
-                        <h3>10%</h3>
-                        <p>Sinh viên du học chuyển tiếp tại Hungary</p>
-                    </div>
-                    <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3 box">
-                        <h3>50.000</h3>
-                        <p>Sinh viên đã tốt nghiệp</p>
+            <div class="box-thongso " data-aos="fade-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
+                            <h3>45</h3>
+                            <p>Truyền thống</p>
+                        </div>
+                        <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
+                            <h3>96%</h3>
+                            <p>Sinh viên có việc làm</p>
+                        </div>
+                        <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
+                            <h3>10%</h3>
+                            <p>Sinh viên du học chuyển tiếp tại Hungary</p>
+                        </div>
+                        <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
+                            <h3>50.000</h3>
+                            <p>Sinh viên đã tốt nghiệp</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- section thongso end -->
 
             <!-- section review start -->
-            <div class="container box" data-aos="fade-left">
-                <div class="row row-title">
-                    <h3>VÌ SAO CHỌN ĐẠI HỌC CÔNG NGHIỆP VIỆT HUNG ?</h3>
-                </div>
-                <div class="row row-desc">
-                    <p>Là trường Đại học Công lập - Trực thuộc Bộ Công Thương<br>
-                        gắn kết với triết lý giáo dục: Không ngừng đổi mới, sáng tạo vì người học và sự phù hợp</p>
-                </div>
-
-                <div class="row riview-list box">
-                    <div class="col-4 riview-list-item">
-                        <img src="./images/Ellipse 2 (1).png" alt="">
-                        <p>Học phí ưu đãi</p>
+            <div class="review" data-aos="fade-left">
+                <div class="container">
+                    <div class="review-top">
+                        <div class="row-title">
+                            <h3>VÌ SAO CHỌN ĐẠI HỌC CÔNG NGHIỆP VIỆT HUNG ?</h3>
+                        </div>
+                        <div class="row-desc">
+                            <p>Là trường Đại học Công lập - Trực thuộc Bộ Công Thương
+                                gắn kết với triết lý giáo dục: Không ngừng đổi mới, sáng tạo vì người học và sự phù hợp</p>
+                        </div>
                     </div>
-                    <div class="col-4 riview-list-item">
-                        <img src="./images/Ellipse 2 (2).png" alt="">
-                        <p>Cơ sở vật chất hiện đại</p>
+    
+                    <div class="row riview-list">
+                        <div class="col-md-4 col-6 riview-list-item">
+                            <img src="./images/Ellipse 2 (1).png" alt="">
+                            <p>Học phí ưu đãi</p>
+                        </div>
+                        <div class="col-md-4 col-6 riview-list-item">
+                            <img src="./images/Ellipse 2 (2).png" alt="">
+                            <p>Cơ sở vật chất hiện đại</p>
+                        </div>
+                        <div class="col-md-4 col-6 riview-list-item">
+                            <img src="./images/Ellipse 2 (3).png" alt="">
+                            <p>Đào tạo theo nhu cầu của doanh nghiệp</p>
+                        </div>
+                        <div class="col-md-4 col-6 riview-list-item">
+                            <img src="./images/Ellipse 2 (4).png" alt="">
+                            <p>Cơ hội du học tại nước ngoài</p>
+                        </div>
+                        <div class="col-md-4 col-6 riview-list-item">
+                            <img src="./images/Ellipse 2 (5).png" alt="">
+                            <p>Cơ hội việc làm  </p>
+                        </div>
+                        <div class="col-md-4 col-6 riview-list-item">
+                            <img src="./images/Ellipse 2 (6).png" alt="">
+                            <p>Môi trường năng động</p>
+                        </div>
+                        <div class="btn-register">
+                            <div class="btn btn-primary hvr-pop" >ĐĂNG KÝ NGAY</div>
+                        </div>
                     </div>
-                    <div class="col-4 riview-list-item">
-                        <img src="./images/Ellipse 2 (3).png" alt="">
-                        <p>Đào tạo theo nhu cầu của doanh nghiệp</p>
-                    </div>
-                    <div class="col-4 riview-list-item">
-                        <img src="./images/Ellipse 2 (4).png" alt="">
-                        <p>Cơ hội du học tại nước ngoài</p>
-                    </div>
-                    <div class="col-4 riview-list-item">
-                        <img src="./images/Ellipse 2 (5).png" alt="">
-                        <p>Cơ hội việc làm  </p>
-                    </div>
-                    <div class="col-4 riview-list-item">
-                        <img src="./images/Ellipse 2 (6).png" alt="">
-                        <p>Môi trường năng động</p>
-                    </div>
-                    <div class="btn-register">
-                        <div class="btn btn-primary hvr-pop" >ĐĂNG KÝ NGAY</div>
-                    </div>
-
-
                 </div>
             </div>
             <!-- section review end -->
 
         <!-- section nganh start -->
-            <div class="container-fluid px-0 mx-0" data-aos="fade-left">
+            <div class="chuyennganh" data-aos="fade-left">
                 <div class="top-chuyennganh">
                     <h3 class="title-chuyennganh">CÁC CHUYÊN NGÀNH ĐÀO TẠO</h3>
                 </div>
-                <div class="row" style="margin: 0 9%; padding-bottom: 20px;">
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ THÔNG TIN</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
+                <div class="container">
+                    <div class="chuyennganh-wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH CÔNG NGHỆ THÔNG TIN</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH CÔNG NGHỆ KỸ THUẬT Ô TÔ</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT Ô TÔ</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỆN - ĐIỆN TỬ</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH CÔNG NGHỆ KỸ THUẬT CƠ KHÍ</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT ĐIỆN - ĐIỆN TỬ</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH CÔNG NGHỆ KỸ THUẬT XÂY DỰNG</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH QUẢN TRỊ KINH DOANH</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT CƠ KHÍ</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH TÀI CHÍNH NGÂN HÀNG</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="chuyennganh-product">
+                                    <div class="product-title">
+                                        <a href="#">NGÀNH KINH TẾ</a>
+                                    </div>
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 453 x2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Công nghệ thông tin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Quảng cáo số</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thương mại điện tử</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Thiết kế đồ họa</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tin học - Kế toán</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Công nghệ truyền thông</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH CÔNG NGHỆ KỸ THUẬT XÂY DỰNG</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH QUẢN TRỊ KINH DOANH</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH TÀI CHÍNH NGÂN HÀNG</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 chuyennganh-item">
-                        <div class="card card-chuyennganh hvr-grow">
-                            <div class="card-body card-body-chuyennganh">
-                                <h4 class="align-items-center card-title d-flex justify-content-center">NGÀNH KINH TẾ</h4>
-                                <img class="card-img-bottom" src="./images/Rectangle 453 x2.png" alt="" style="width:100%">
-                                <ul>
-                                    <li>Công nghệ thông tin</li>
-                                    <li>Quảng cáo số</li>
-                                    <li>Thương mại điện tử</li>
-                                    <li>Thiết kế đồ họa</li>
-                                    <li>Tin học - Kế toán</li>
-                                    <li>Công nghệ truyền thông</li>
-                                </ul>
-                            </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -317,15 +472,18 @@
 
         <!-- sectiom TTTS start -->
             <div class="TTTS" data-aos="zoom-in">
-                
-                    <div class="TTTS-title">
-                        <h1>THÔNG TIN TUYỂN SINH 2022</h1>
+                <div class="TTTS-wrap">
+                    <div class="container">
+                        <div class="TTTS-title">
+                            <h1>THÔNG TIN TUYỂN SINH 2022</h1>
+                        </div>
+                        <div class="TTTS-desc">
+                            <p>Mã trường Đại Học Công Nghiệp Việt Hung: VHD</p>
+                        </div>
+                        <div class="TTTS-img">
+                            <img src="./images/trang tuyen sinh dai hoc viet hung 2 1.png" alt="">
+                        </div>
                     </div>
-                    <div class="TTTS-desc">
-                        <p>Mã trường Đại Học Công Nghiệp Việt Hung: VHD</p>
-                    </div>
-                    <div class="TTTS-img">
-                        <img src="./images/trang tuyen sinh dai hoc viet hung 2 1.png" alt="">
                 </div>
             </div>
         <!-- sectiom TTTS end -->
@@ -373,48 +531,76 @@
 
         <!-- section gallery start -->
             <div class="gallery" data-aos="fade-left">   
-                <div class="container-fluid px-0">
-                    <div class="gallery-title">
-                        <h3>NHỮNG HÌNH ẢNH VỀ TRƯỜNG</h3>
-                    </div>
-                    <div class="gallery-desc">
-                        <p>Nhà trường tạo điều kiện thuận lợi giúp sinh viên phát triển năng lực, khả năng tư duy sáng tạo <br>trong thời kỳ hội nhập</p>
+                <div class="container">
+                    <div class="gallery-top">
+                        <div class="gallery-title">
+                            <h3>NHỮNG HÌNH ẢNH VỀ TRƯỜNG</h3>
+                        </div>
+                        <div class="gallery-desc">
+                            <p>Nhà trường tạo điều kiện thuận lợi giúp sinh viên phát triển năng lực, khả năng tư duy sáng tạo trong thời kỳ hội nhập</p>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 gallery-product">
-                            <div class="gallery-name-product">
+                        <div class="col-md-6 col-12 gallery-product">
+                            <div class="gallery-name-title">
                                 <p>Video</p>
                             </div>
                             <div class="gallery-content">
-                                <img src="./images/Rectangle 456 (1) x2.png" alt="">
+                                <a href="#">
+                                    <img src="./images/Rectangle 456 (1) x2.png" alt="">
+                                </a>
                                 <p class="gallery-content-title">Giới thiệu trường Đại học Công nghiệp Việt - Hung</p>
                                 
                                 <div class="logo-ytb"><i class="fa-brands fa-youtube"></i>  </div>                       
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-12 col-sm-12 gallery-product ">
-                            <div class="gallery-name-product">
+                        <div class="col-md-6 col-12 gallery-product ">
+                            <div class="gallery-name-title">
                                 <p>Thư viện ảnh</p>
                             </div>
                             <div class="row">
-                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
-                                    <img src="./images/Rectangle 458.png" alt="">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="gallery-product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 458.png" alt="">
+                                        </a>
+                                    </div> 
                                 </div>
-                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
-                                    <img src="./images/Rectangle 459.png" alt="">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="gallery-product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 459.png" alt="">
+                                        </a>
+                                    </div> 
                                 </div>
-                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
-                                    <img src="./images/Rectangle 460.png" alt="">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="gallery-product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 460.png" alt="">
+                                        </a>
+                                    </div> 
                                 </div>
-                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
-                                    <img src="./images/Rectangle 461.png" alt="">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="gallery-product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 461.png" alt="">
+                                        </a>
+                                    </div> 
                                 </div>
-                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
-                                    <img src="./images/Rectangle 462.png" alt="">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="gallery-product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 462.png" alt="">
+                                        </a>
+                                    </div> 
                                 </div>
-                                <div class="col-6 col-sm-6 col-lg-4 gallery-name-product-img">
-                                    <img src="./images/Rectangle 463.png" alt="">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="gallery-product-img">
+                                        <a href="#">
+                                            <img src="./images/Rectangle 463.png" alt="">
+                                        </a>
+                                    </div> 
                                 </div>
                                 <div class="more d-flex justify-content-end">
                                     <a href="#">Xem thêm</a>
@@ -428,41 +614,63 @@
             </div>
         <!-- section gallery end -->
 
-        <!-- section location start -->
-            <div class="location" data-aos="zoom-in">
-                <div class="location-title">
-                    <h2>các cơ sở đào tạo   </h2>
-                </div>
-                <div class="location-desc">
-                    <p>Cơ sở vật chất, kĩ thuật hạ tầng được trang bị đầy đủ để sinh viên có thể thoải mái học tập và gắn bó<br> suốt quãng thời gian sinh viên tươi đẹp ở đây</p>
-                </div>
+            <!-- section location start -->
+            <div class="location">
+                <div class="container">
+                    <div class="location-top">
+                        <div class="location-top-title">
+                            <h3>các cơ sở đào tạo</h3>
+                        </div>
+                        <div class="location-top-desc">
+                            <p>Cơ sở vật chất, kĩ thuật hạ tầng được trang bị đầy đủ để sinh viên có thể thoải mái học tập và gắn bó suốt quãng thời gian sinh viên tươi đẹp ở đây</p>
+                        </div>
+                    </div>
+                    <div class="row">
 
-                <div class="location-adress-wrap">
-                    <div class="location-adress hvr-grow">
-                        <div class="img-location">
-                            <img src="./images/Rectangle 466.png" alt="">
+                        <div class="col-md-4 col-12">
+                            <div class="location-product">
+                                <div class="location-product-img">
+                                    <a href="#">
+                                        <img src="./images/Rectangle 466.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="location-product-title">
+                                    <h3>
+                                        <a href="#">Cơ sở 1: Số 16 Hữu Nghị - Xuân Khanh - Sơn Tây - TP. Hà Nội</a>
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-location">
-                            <p>Cơ sở 1: Số 16 Hữu Nghị - Xuân Khanh - Sơn Tây - TP. Hà Nội  </p>
+                        <div class="col-md-4 col-12">
+                            <div class="location-product">
+                                <div class="location-product-img">
+                                    <a href="#">
+                                        <img src="./images/Rectangle 466.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="location-product-title">
+                                    <h3>
+                                        <a href="#">Cơ sở 1: Số 16 Hữu Nghị - Xuân Khanh - Sơn Tây - TP. Hà Nội</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="location-product">
+                                <div class="location-product-img">
+                                    <a href="#">
+                                        <img src="./images/Rectangle 466.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="location-product-title">
+                                    <h3>
+                                        <a href="#">Cơ sở 1: Số 16 Hữu Nghị - Xuân Khanh - Sơn Tây - TP. Hà Nội</a>
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="location-adress hvr-grow">
-                        <div class="img-location">
-                            <img src="./images/Rectangle 466.png" alt="">
-                        </div>
-                        <div class="text-location">
-                            <p>Cơ sở 2: Bình Phú, Thạch Thất, Hà Nội</p>
-                        </div>
-                    </div>
-                    <div class="location-adress hvr-grow">
-                        <div class="img-location">
-                            <img src="./images/Rectangle 466.png" alt="">
-                        </div>
-                        <div class="text-location">
-                            <p>Cơ sở 3: S27 Lê Văn Lương, Thanh Xuân, Hà Nội</p>
-                        </div>
-                    </div>
-                </div>          
+                </div>
             </div>
         <!-- section location end -->
 

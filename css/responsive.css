@@ -96,11 +96,21 @@
     .text-location p{
         font-size: 14px;
     }
+
+    .gallery-product-img img {
+        max-width: 200px;
+    }
 }
 
 
 /* Small */
 @media (max-width: 768px) {
+
+    .banner img {
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+    }
     .thongso-content h3{
         font-size: 40px;
         text-align: center;
