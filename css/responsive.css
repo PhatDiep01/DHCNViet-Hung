@@ -247,4 +247,7 @@
     .box.card-chuyennganh {
         max-width: 400px;
     }
+    .logo-ytb i {
+        font-size: 60px;
+    }
 }
