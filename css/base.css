@@ -27,8 +27,6 @@
 
 .btn {
     display: flex;
-    /* max-width: 231px;
-    max-height: 50px; */
     background-color: var(--primary-text-color-orange);
     border-radius: 5px;
     text-align: center;

@@ -116,6 +116,10 @@ button.navbar-toggler{
     font-weight: 700;
 }
 
+.chuyennganh {
+    padding: 50px 0;
+}
+
 .top-chuyennganh {
     height: 100px;
     display: flex;
@@ -362,10 +366,6 @@ button.navbar-toggler{
     padding: 30px;
 }
 
-/* .gallery .box {
-    padding: 0;
-} */
-
 .gallery-title h3 {
     font-size: 30px;
     font-weight: 700;
@@ -588,6 +588,12 @@ button.navbar-toggler{
     padding: 15px;
 }
 
+.breadcrumb a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #333333;
+}
+
 .breadcrumb-wrap {
     display: flex;
     border-bottom: 1px solid #E5E9EC;
@@ -596,14 +602,34 @@ button.navbar-toggler{
 .italics {
     padding: 0 7px;
 }
+.italics p{
+    margin: 0;
+}
 
-.home-page p{
-    
+.home-page a{
     color: var(--primary-text-color-blue);
+}
+
+.subnotify a{
+    color: #000000;
 }
 
 .section-body-left-title {
     border-bottom: 1px solid #E5E9EC;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section-body-left-title::before {
+    content: "";
+    border-bottom: 1px solid var(--primary-text-color-blue);
+    height: 1px;
+    position: absolute;
+    width: 55px;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    display: block;
 }
 
 .section-body-left-title h4{
@@ -615,6 +641,11 @@ button.navbar-toggler{
 .body-left-wrap {
     padding: 15px 0;
         border-bottom: 1px dotted #DFE5EC;
+}
+
+.body-left-wrap a{
+    text-decoration: none;
+    color: #333333;
 }
 
 .body-left-img-wrap {
@@ -658,9 +689,34 @@ button.navbar-toggler{
     color: #333333;
     line-height: 24px;
 }
+.section-body-right-wrap {
+    background: #FFFFFF;
+    border: 1px solid #E5E9EC;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.section-body-right-wrap a{
+    text-decoration: none;
+}
 
 .section-body-right-title {
     border-bottom: 1px solid #E5E9EC;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section-body-right-title::before {
+    content: "";
+    border-bottom: 1px solid var(--primary-text-color-blue);
+    height: 1px;
+    position: absolute;
+    width: 55px;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    display: block;
 }
 
 .section-body-right-title h4{
@@ -680,12 +736,74 @@ button.navbar-toggler{
 }
 
 
+.section-body-right-title-content a{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 24px;
+    color: #333333;
+}
+
+.section-body-right-title-content p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #888888;
+}
+
+.section-body-right-content-wrap {
+    height: 95px;
+}
+
+.section-body-right-content {
+    padding: 10px 0;
+    border-top: 1px dotted #DFE5EC;
+}
+
+.section-body-right-content a{
+    line-height: 24px;
+    font-size: 14px;
+    color: #111111;
+}
+
+.section-body-right-content p span{
+    font-size: 12px;
+    color: #666666;
+}
+
+.btn-primary.btn-more {
+    background-color: var(--primary-text-color-blue);
+    width: 100%;
+}
+
+.btn-more a{
+    text-decoration: none;
+    color: var(--white-text-color);
+    font-weight: 400;
+}
+.btn-register .hvr-pop {
+    max-width: 243px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+
+.btn-register {
+    padding-top: 20px;
+}
 
 
 
 
 /* footer */
+
+.footer .container .row{
+    max-width: 100%;
+}
+
 .footer-contact-social {
+    padding: 0;
+}
+
+.footer-bot {
     padding: 0;
 }
 
@@ -705,22 +823,135 @@ button.navbar-toggler{
     justify-content: center;
 }
 
+.pagination {
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    border: none;
+    padding: 5px 20px;
+    color: #333333;
+    transition: none;
+}
+
+.pagination .page-item .page-link:hover {
+    border: 1px solid var(--primary-text-color-blue);
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color-blue);
+}
+
+.section-body-blog-top {
+    border-bottom: 1px dotted #DFE5EC;
+}
+
+.section-body-blog-title h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: #222222;
+    line-height: 36px;
+    margin: 0;
+}
+
+.section-body-blog-date p{
+    font-size: 12px ;
+    font-weight: 700;
+    color: var(--primary-text-color-blue);
+    line-height: 36px;
+}
+
+.section-body-blog-content{
+    padding: 15px 0;
+}
+
+.section-body-blog-content-1 p{
+    margin: 0;
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.section-body-blog-content-img {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section-body-blog-content-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-body-blog-content-2 p{
+    margin: 0;
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.section-hinhanh {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.section-hinhanh-wrap {
+    padding: 30px 0;
+}
+
+.section-hinhanh-title {
+    border-bottom: 1px solid #E5E9EC;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section-hinhanh-title::before {
+    content: "";
+    border-bottom: 1px solid var(--primary-text-color-blue);
+    height: 1px;
+    position: absolute;
+    width: 55px;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.section-hinhanh-title h3{
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 700    ;
+}
+
+.section-hinhanh-img {
+    width: 100%;
+}
+
+.section-hinhanh-img a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-hinhanh-item-title {
+    padding: 15px 0;
+}
+.section-hinhanh-item-title a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-hinhanh-item-title a p {
+    font-size: 20px;
+    display: inline;
+    color: #888888;
+    margin: 0;
+}
+
 /* ------------------------------------------------- */
 
 
 
-.btn-register {
-    display: flex;
-    justify-content: center;
-    margin-top: 47px;   
-    margin-bottom: 50px;
-}
-
-
-
-.btn-register .btn {
-    font-size: 20px;
-}
 
 
 
@@ -791,7 +1022,7 @@ button.navbar-toggler{
     font-size: 12px;
     text-decoration: none;
     color: var(--white-text-color);
-}
+} */
 /* location */
 
 
@@ -1061,7 +1292,7 @@ button.navbar-toggler{
 }
 
 
-.libphotos .pagination .pagination-product:last-child{
+/* .libphotos .pagination .pagination-product:last-child{
     padding-bottom: 50px;
-}
+} */
 
