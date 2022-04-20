@@ -24,7 +24,7 @@
 }
 
 .navbar-wrap ul li a{
-    font-size: 15px;
+    font-size: 18px;
     color: var(--white-text-color);
     font-weight: 700;
     line-height: 24px;
@@ -584,6 +584,107 @@ button.navbar-toggler{
     font-weight: 700;
 }
 
+.breadcrumb {
+    padding: 15px;
+}
+
+.breadcrumb-wrap {
+    display: flex;
+    border-bottom: 1px solid #E5E9EC;
+}
+
+.italics {
+    padding: 0 7px;
+}
+
+.home-page p{
+    
+    color: var(--primary-text-color-blue);
+}
+
+.section-body-left-title {
+    border-bottom: 1px solid #E5E9EC;
+}
+
+.section-body-left-title h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.body-left-wrap {
+    padding: 15px 0;
+        border-bottom: 1px dotted #DFE5EC;
+}
+
+.body-left-img-wrap {
+    height: 142px;
+}
+
+.body-left-img {
+    height: 100%;
+}
+
+.body-left-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.content-title h4{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.content-date {
+    padding-top: 5px;
+}
+
+.content-date p{
+    font-size: 14px;
+    color: #888888;
+    margin: 0;
+}
+
+.content-text {
+    padding-top: 10px;
+}
+
+.content-text p{
+    font-size: 14px;
+    color: #333333;
+    line-height: 24px;
+}
+
+.section-body-right-title {
+    border-bottom: 1px solid #E5E9EC;
+}
+
+.section-body-right-title h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-body-right-img {
+    padding: 15px 0;
+}
+
+.section-body-right-img img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* footer */
 .footer-contact-social {
     padding: 0;
 }
@@ -591,8 +692,6 @@ button.navbar-toggler{
 .footer-bot-list {
     list-style: none;
 }
-
-
 
 .footer-bot-list li a{
     text-decoration: none;
@@ -707,21 +806,14 @@ button.navbar-toggler{
 /* breadcrumb */
 
 
-.breadcrumb {
+/* .breadcrumb {
     display: flex;
     font-size: 12px;
     padding: 8px 4px 4px;
     border-bottom: 1px solid #E5E9EC;
-}
+} */
 
-.italics {
-    padding: 0 7px;
-}
 
-.home-page p{
-    
-    color: var(--primary-text-color-blue);
-}
 /* body */
 
 

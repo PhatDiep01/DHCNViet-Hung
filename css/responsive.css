@@ -163,6 +163,10 @@
     .contact-full p{
         font-size: 15px;
     }
+
+    .body-left-img-wrap {
+        height: 150px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -252,5 +256,21 @@
     }
     .footer-info {
         padding-left: 17px;
+    }
+
+    .body-left-img-wrap {
+        height: 160px;
+    }
+
+    .content-title h4{
+        font-size: 14px;
+    }
+
+    .content-date p{
+        font-size: 12px;
+    }
+
+    .content-text p{
+        font-size: 12px;
     }
 }
