@@ -7,6 +7,8 @@
     .header .header-title {
         width: 100%;
     }
+
+   
    
     .header .header-title h3 {
         font-size: 15px;
@@ -102,10 +104,21 @@
     }
 
     .section-hinhanh-item-title a {
-        font-size: 16px;
+        font-size: 95%;
     }
     .section-hinhanh-item-title a p{
-        font-size: 16px;
+        font-size: 95%;
+    }
+
+    .section-hinhanh-img-icon a i {
+        font-size: 55px;
+    }
+    .navigation a{
+        font-size: 25px;
+    }
+
+    .pagination {
+        padding: 10px 0;
     }
 }
 
@@ -135,6 +148,11 @@
     .title-chuyennganh {
         font-size: 25px;
     }
+
+    /* .chuyennganh-wrap .chuyennganh-product {
+        max-width: 80%;
+        margin: 0 auto 15px;
+    } */
 
     .TTTS-img img{
         max-height: 808px;
@@ -173,6 +191,10 @@
 
     .body-left-img-wrap {
         height: 150px;
+    }
+
+    .section-hinhanh-img-icon a i {
+        font-size: 45px;
     }
 }
 
@@ -281,9 +303,29 @@
         font-size: 12px;
     }
     .section-hinhanh-item-title a {
-        font-size: 14px;
+        font-size: 90%;
     }
     .section-hinhanh-item-title a p{
-        font-size: 14px;
+        font-size: 90%;
+    }
+
+    .section-hinhanh-img-icon a i {
+        font-size: 25px;
+    }
+
+    .pagination .page-item .page-link {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .pagination {
+        padding: 5px 0;
+    }
+
+    .section-hinhanh-item-title a{
+        font-size: 80%;
+    }
+    .section-hinhanh-item-title a p{
+        font-size: 80%;
     }
 }

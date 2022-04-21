@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
 
     <!-- Animate on Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/aos.css">
+
 
     <!-- link css -->
     <link rel="stylesheet" href="./css/base.css">
@@ -34,7 +35,7 @@
 <body>
     <div class="main">
         <!-- section header start -->
-        <div class="header container d-flex px-0 py-2" data-aos="fade-left">
+        <div class="header container d-flex px-0 py-2" data-aos="fade-up">
             <div class="header-logo col-lg-4">
                 <a href="#">
                     <img src="./images/logoviethung 2 1 (Traced) x2.png" alt="">
@@ -48,18 +49,18 @@
         <!-- section header end -->
 
         <!-- section navbar start -->
-        <div class="navbar-wrap align-items-center  d-flex d-none d-lg-block" data-aos="fade-left">
+        <div class="navbar-wrap align-items-center   d-flex d-none d-lg-block" data-aos="fade-up">
                 <ul class="nav justify-content-between container">
                     <li class="nav-item d-flex">
                         <a href="#" class="nav-link"><i class="fa-solid fa-house" style="margin-right: 20px;"></i> 
                             TRANG CHỦ</a></li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a href="#TTTS" class="nav-link">THÔNG BÁO TUYỂN SINH</a></li>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a href="#chuyennganh" class="nav-link">CHUYÊN NGÀNH ĐÀO TẠO</a></li>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a href="#dangky" class="nav-link">ĐĂNG KÝ XÉT TUYỂN</a></li>
                     </li>
                 </ul>
@@ -82,13 +83,13 @@
                       <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Thông Tin Tuyển Sinh</a>
+                        <a class="nav-link active" aria-current="page" href="#TTTS">Thông Tin Tuyển Sinh</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Chuyên Ngành Đào Tạo</a>
+                        <a class="nav-link active" aria-current="page" href="#chuyennganh">Chuyên Ngành Đào Tạo</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Đăng Ký Xét Tuyển</a>
+                        <a class="nav-link active" aria-current="page" href="#dangky">Đăng Ký Xét Tuyển</a>
                       </li>
                   </ul>
                   
@@ -96,19 +97,34 @@
               </div>
             </div>
         </nav>
-        <!-- section navbar position end -->
+        <!-- carousel slide start -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Rectangle 451.png" alt="" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Rectangle 452.png" alt="" class="d-block" style="width:100%">
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        <!-- carousel slide end -->
 
-        <!-- section banner start -->
-        <div class="banner" data-aos="fade-left">
-            <a href="#">
-
-                <img src="./images/Rectangle 451 x2.png" alt="">
-            </a>
-        </div>
-        <!-- section banner end -->
 
             <!-- section thongso start -->
-            <div class="box-thongso " data-aos="fade-left">
+            <div class="box-thongso " data-aos="fade-up">
                 <div class="container">
                     <div class="row">
                         <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
@@ -133,7 +149,7 @@
             <!-- section thongso end -->
 
             <!-- section review start -->
-            <div class="review" data-aos="fade-left">
+            <div class="review" data-aos="fade-up">
                 <div class="container">
                     <div class="review-top">
                         <div class="row-title">
@@ -179,13 +195,13 @@
             <!-- section review end -->
 
         <!-- section nganh start -->
-            <div id="chuyennganh" class="chuyennganh" data-aos="fade-left">
+            <div id="chuyennganh" class="chuyennganh" data-aos="fade-up">
                 <div class="top-chuyennganh">
                     <h3 class="title-chuyennganh">CÁC CHUYÊN NGÀNH ĐÀO TẠO</h3>
                 </div>
                 <div class="container">
-                    <div class="chuyennganh-wrap">
-                        <div class="row">
+                    <div class="chuyennganh-wrap" data-aos="fade-up">
+                        <div class="row" >
                             <div class="col-lg-3 col-md-6 col-12">
                                 <div class="chuyennganh-product">
                                     <div class="product-title">
@@ -465,7 +481,7 @@
         <!-- section nganh end -->
 
         <!-- sectiom TTTS start -->
-            <div id="TTTS" class="TTTS" data-aos="zoom-in">
+            <div id="TTTS" class="TTTS" data-aos="fade-up">
                 <div class="TTTS-wrap">
                     <div class="container">
                         <div class="TTTS-title">
@@ -483,7 +499,7 @@
         <!-- sectiom TTTS end -->
 
         <!-- section xettuyen start -->
-            <div id="dangky" class="box-xettuyen"  data-aos="fade-left">
+            <div id="dangky" class="box-xettuyen"  data-aos="fade-up">
                 <div class="container-fluid">
                     <div class="box-xettuyen-title">
                         <h1>ĐĂNG KÝ TƯ VẤN & XÉT TUYỂN</h1>
@@ -524,7 +540,7 @@
         <!-- section xettuyen end -->
 
         <!-- section gallery start -->
-            <div class="gallery" data-aos="fade-left">   
+            <div class="gallery" data-aos="fade-up">   
                 <div class="container">
                     <div class="gallery-top">
                         <div class="gallery-title">
@@ -545,7 +561,11 @@
                                 </a>
                                 <p class="gallery-content-title">Giới thiệu trường Đại học Công nghiệp Việt - Hung</p>
                                 
-                                <div class="logo-ytb"><i class="fa-brands fa-youtube"></i>  </div>                       
+                                <div class="logo-ytb">
+                                    <a href="#">                                        
+                                        <i class="fa-brands fa-youtube"></i> 
+                                    </a>
+                                 </div>                       
                             </div>
                         </div>
 
@@ -609,7 +629,7 @@
         <!-- section gallery end -->
 
             <!-- section location start -->
-            <div class="location">
+            <div class="location" data-aos="fade-up">
                 <div class="container">
                     <div class="location-top">
                         <div class="location-top-title">
@@ -669,7 +689,7 @@
         <!-- section location end -->
 
         <!-- footer section start -->
-            <div class="footer ">
+            <div class="footer">
                 <div class="container">
                         <div class="row">
                             <div class=" col-sm-6 col-12 contact-full ">
@@ -725,14 +745,14 @@
     </div>
 
     <script src="./bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
     <script>
       AOS.init({
         duration : 1000,
         once: true
       });
     </script>
+    
 </body>
 
 </html>
