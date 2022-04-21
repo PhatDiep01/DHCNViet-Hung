@@ -7,8 +7,6 @@
     .header .header-title {
         width: 100%;
     }
-
-   
    
     .header .header-title h3 {
         font-size: 15px;
@@ -61,6 +59,10 @@
         font-size: 12px;
     }
 
+    .section-body-right-content-wrap {
+        height: 65px;
+    }
+
     .TTTS-img img{
         max-height: 1034px;
     }
@@ -100,7 +102,7 @@
     }
 
     .gallery-product-img img {
-        max-width: 200px;
+        width: 100%;
     }
 
     .section-hinhanh-item-title a {
@@ -119,6 +121,18 @@
 
     .pagination {
         padding: 10px 0;
+    }
+
+    .footer-bot-list li a {
+        padding-left: 15px;
+    }
+
+    .gallery-content-title {
+        font-size: 16px;
+    } 
+
+    .logo-ytb i {
+        font-size: 55px;
     }
 }
 
@@ -149,10 +163,13 @@
         font-size: 25px;
     }
 
-    /* .chuyennganh-wrap .chuyennganh-product {
-        max-width: 80%;
-        margin: 0 auto 15px;
-    } */
+    .location-top-title h3 {
+        font-size: 20px;
+    }
+
+    .location-top-desc p{
+        font-size: 14px;
+    }
 
     .TTTS-img img{
         max-height: 808px;
@@ -195,6 +212,14 @@
 
     .section-hinhanh-img-icon a i {
         font-size: 45px;
+    }
+
+    .logo-ytb i {
+        font-size: 55px;
+    }
+
+    .location-product {
+        margin: 10px 0;
     }
 }
 
@@ -281,7 +306,7 @@
         max-width: 400px;
     }
     .logo-ytb i {
-        font-size: 60px;
+        font-size: 50px;
     }
     .footer-info {
         padding-left: 17px;
@@ -327,5 +352,10 @@
     }
     .section-hinhanh-item-title a p{
         font-size: 80%;
+    }
+    
+    .chuyennganh-wrap .chuyennganh-product {
+        max-width: 80%;
+        margin: 10px auto;
     }
 }
