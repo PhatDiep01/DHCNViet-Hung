@@ -29,21 +29,24 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
-    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 </head>
 
 <body>
     <div class="main">
         <!-- section header start -->
-        <div class="header container d-flex px-0 py-2" data-aos="fade-up">
-            <div class="header-logo col-lg-4">
-                <a href="#">
-                    <img src="./images/logoviethung 2 1 (Traced) x2.png" alt="">
-                </a>
-            </div>
-            <div class="header-title col-lg-8 d-flex align-items-center">
-                <h3>CỔNG THÔNG TIN TUYỂN SINH <br>
-                    ĐẠI HỌC CÔNG NGHIỆP VIỆT - HUNG</h3>
+        <div class="header  py-2" data-aos="fade-up">
+            <div class="container d-flex">
+                <div class="header-logo col-lg-4">
+                    <a href="#">
+                        <img src="./images/logoviethung 2 1 (Traced) x2.png" alt="">
+                    </a>
+                </div>
+                <div class="header-title col-lg-8 d-flex align-items-center">
+                    <h3>CỔNG THÔNG TIN TUYỂN SINH <br>
+                        ĐẠI HỌC CÔNG NGHIỆP VIỆT - HUNG</h3>
+                </div>
             </div>
         </div>
         <!-- section header end -->
@@ -68,7 +71,7 @@
         <!-- section navbar end -->
 
         <!-- section navbar position start -->
-        <nav class="navbar navbar-light bg-nav d-block d-lg-none py-1">
+        <nav class="navbar navbar-light bg-nav d-block d-lg-none py-1 " data-aos="fade-up">
             <div class="container-fluid" style="justify-content: end;">
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-color: white;">
                 <span class="navbar-toggler-icon"></span>
@@ -128,19 +131,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
-                            <h3>45</h3>
+                            <h3 class="counter">45</h3>
                             <p>Truyền thống</p>
                         </div>
                         <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
-                            <h3>96%</h3>
+                            <h3 class="counter">96</h3><h3>%</h3>
                             <p>Sinh viên có việc làm</p>
                         </div>
                         <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
-                            <h3>10%</h3>
+                            <h3 class="counter">10</h3><h3>%</h3>
                             <p>Sinh viên du học chuyển tiếp tại Hungary</p>
                         </div>
                         <div class="thongso-content col-6 col-sm-6 col-md-6 col-lg-3">
-                            <h3>50.000</h3>
+                            <h3 class="counter">50.000</h3>
                             <p>Sinh viên đã tốt nghiệp</p>
                         </div>
                     </div>
@@ -616,7 +619,10 @@
                                         </a>
                                     </div> 
                                 </div>
-                                
+                                <div class="more d-flex justify-content-end">
+                                    <a href="#">Xem thêm</a>
+                                    <!-- <i class="fa-solid fa-caret-right"></i> -->
+                                </div>
                                 
                             </div>
                         </div>
@@ -746,6 +752,16 @@
         duration : 1000,
         once: true
       });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        })
     </script>
     
 </body>
